@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups"; 
@@ -23,10 +23,11 @@ import {
   ColorMapping,
   Editor,
 } from "./pages";
+import { useStateContext } from "./contexts/ContextProvider";
 
 
 function App() {
-  const activeMenu = true;
+  const { activeMenu } = useStateContext();
 
   return (
     <div>
