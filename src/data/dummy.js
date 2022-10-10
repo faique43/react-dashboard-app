@@ -469,7 +469,7 @@ export const employeesGrid = [
     textAlign: 'Center' },
 ];
 
-export const links = [
+export const link = [
   {
     title: 'Dashboard',
     links: [
